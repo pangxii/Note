@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>C Exercises | 庞希</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    
+    <meta name="description" content="computer science">
+    <link rel="preload" href="/assets/css/0.styles.978437f2.css" as="style"><link rel="preload" href="/assets/js/app.3a4d85d6.js" as="script"><link rel="preload" href="/assets/js/2.df84aaee.js" as="script"><link rel="preload" href="/assets/js/12.1f234f4e.js" as="script"><link rel="prefetch" href="/assets/js/10.1aa92065.js"><link rel="prefetch" href="/assets/js/11.7b015660.js"><link rel="prefetch" href="/assets/js/13.b4eae37b.js"><link rel="prefetch" href="/assets/js/14.6303f491.js"><link rel="prefetch" href="/assets/js/15.e60734ed.js"><link rel="prefetch" href="/assets/js/16.6c3d6e47.js"><link rel="prefetch" href="/assets/js/17.e030f553.js"><link rel="prefetch" href="/assets/js/18.21cf0a91.js"><link rel="prefetch" href="/assets/js/19.8d5755fa.js"><link rel="prefetch" href="/assets/js/20.2cd2b36d.js"><link rel="prefetch" href="/assets/js/3.57a83492.js"><link rel="prefetch" href="/assets/js/4.781d444d.js"><link rel="prefetch" href="/assets/js/5.17835e32.js"><link rel="prefetch" href="/assets/js/6.32c9912a.js"><link rel="prefetch" href="/assets/js/7.5ec046d3.js"><link rel="prefetch" href="/assets/js/8.a9b097fa.js"><link rel="prefetch" href="/assets/js/9.de9b2c16.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.978437f2.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">庞希</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开源框架" class="dropdown-title"><span class="title">开源框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/framework/vuepress.html" class="nav-link">
+  VuePress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发工具" class="dropdown-title"><span class="title">开发工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/yarn.html" class="nav-link">
+  Yarn
+</a></li><li class="dropdown-item"><!----> <a href="/tools/nodejs.html" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/tools/tuchuang.html" class="nav-link">
+  图床
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他文章" class="dropdown-title"><span class="title">其他文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/another/mozilla.html" class="nav-link">
+  Mozilla
+</a></li><li class="dropdown-item"><!----> <a href="/another/cad.html" class="nav-link">
+  Cad
+</a></li></ul></div></div><div class="nav-item"><a href="/study_1/" class="nav-link">
+  学习笔记
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开源框架" class="dropdown-title"><span class="title">开源框架</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/framework/vuepress.html" class="nav-link">
+  VuePress
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发工具" class="dropdown-title"><span class="title">开发工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/tools/vscode.html" class="nav-link">
+  VSCode
+</a></li><li class="dropdown-item"><!----> <a href="/tools/git.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/tools/yarn.html" class="nav-link">
+  Yarn
+</a></li><li class="dropdown-item"><!----> <a href="/tools/nodejs.html" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/tools/tuchuang.html" class="nav-link">
+  图床
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他文章" class="dropdown-title"><span class="title">其他文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/another/mozilla.html" class="nav-link">
+  Mozilla
+</a></li><li class="dropdown-item"><!----> <a href="/another/cad.html" class="nav-link">
+  Cad
+</a></li></ul></div></div><div class="nav-item"><a href="/study_1/" class="nav-link">
+  学习笔记
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/study_2/ccpp/c.html" class="sidebar-link">C Primer Plus</a></li><li><a href="/study_2/ccpp/cexercises.html" class="active sidebar-link">C Exercises</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/study_2/ccpp/cexercises.html#ch3-exercises" class="sidebar-link">Ch3 Exercises</a></li><li class="sidebar-sub-header"><a href="/study_2/ccpp/cexercises.html#ch4-exercises" class="sidebar-link">Ch4 Exercises</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="ch3-exercises"><a href="#ch3-exercises" class="header-anchor">#</a> Ch3 Exercises</h2> <details class="custom-block details"><summary>1. 通过实验观察系统处理 整数、浮点数 的上溢下溢问题</summary> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;limits.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">short</span> a <span class="token operator">=</span> SHRT_MAX<span class="token punctuation">;</span>
+    <span class="token keyword">short</span> b <span class="token operator">=</span> SHRT_MAX <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> c <span class="token operator">=</span> INT_MAX<span class="token punctuation">;</span>
+    <span class="token keyword">int</span> d <span class="token operator">=</span> INT_MAX <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;short max is:%d\n&quot;</span><span class="token punctuation">,</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;short max add one is:%d\n&quot;</span><span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;int max is:%d\n&quot;</span><span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;int max add one is:%d\n&quot;</span><span class="token punctuation">,</span> d<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>    short max is:32767
+    short max <span class="token function">add</span> one is:-32768
+    int max is:2147483647
+    int max <span class="token function">add</span> one is:-2147483648
+</code></pre></div></details> <details class="custom-block details"><summary>2. 提醒输入一个 ASCII 码值（如，66），然后打印输入的字符</summary> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">char</span> a<span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Please enter an ASCII code\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%c&quot;</span><span class="token punctuation">,</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Please enter an ASCII code
+$ <span class="token number">65</span>
+A
+</code></pre></div></details> <details class="custom-block details"><summary>3. 发出一声警报，打印下面的文本</summary> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;\007&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Startled by the sudden sound, Sally shouted,\n&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;\&quot;By the Great Pumpkin, what was that!\&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span> <span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Startled by the sudden sound, Sally shouted,
+<span class="token string">&quot;By the Great Pumpkin, what was that!&quot;</span>
+</code></pre></div></details> <details class="custom-block details"><summary>4. 读取一个浮点数，先打印成小数点，再打印成指数，再打印P计数法</summary> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">float</span> a<span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Enter a floating-print value:___\b\b\b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%f&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;fixed-point notation:%f\n&quot;</span>
+           <span class="token string">&quot;exponential notation:%e\n&quot;</span>
+           <span class="token string">&quot;p notation:%a\n&quot;</span><span class="token punctuation">,</span>
+           a<span class="token punctuation">,</span> a<span class="token punctuation">,</span> a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Enter a floating-print value:64.25
+fixed-point notation:64.250000
+exponential notation:6.425000e+001
+p notation:0x1.010000p+6
+</code></pre></div></details> <details class="custom-block details"><summary>5. 一年大约有 3.156 X 10^7秒，输入年龄，显示该年龄对应的秒数</summary> <div class="language-c extra-class"><pre class="language-c"><code><span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">long</span> year_second <span class="token operator">=</span> <span class="token number">3.156e7</span><span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">long</span> age<span class="token punctuation">;</span>
+    <span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token keyword">long</span> seconds<span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Please enter your age:___\b\b\b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%d&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    seconds <span class="token operator">=</span> age <span class="token operator">*</span> year_second<span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;The seconds is:%llu\n&quot;</span><span class="token punctuation">,</span> seconds<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Please enter your age:20
+The seconds is:631200000
+</code></pre></div></details> <details class="custom-block details"><summary>6. 1个水分子的质量约为 3.0 X 10^-23 克。1夸脱水大约是 950 克。输入水的夸脱数，显示水分子的数量</summary> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>   
+    <span class="token keyword">float</span> quarts<span class="token punctuation">;</span>
+	<span class="token keyword">float</span> water_member<span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Enter the quart number of water:___\b\b\b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%f&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>quarts<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	water_member <span class="token operator">=</span> quarts<span class="token operator">*</span><span class="token number">950</span><span class="token operator">/</span><span class="token number">3.0E-23</span><span class="token punctuation">;</span>
+	<span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Number of water molecules: %e&quot;</span><span class="token punctuation">,</span> water_member<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Enter the quart number of water:20_
+Number of water molecules: <span class="token number">6</span>.333333e+026
+</code></pre></div></details> <details class="custom-block details"><summary>7. 1英尺相当于2.54厘米。输入身高（/英尺），以厘米为单位显示身高</summary> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">double</span> height_foot<span class="token punctuation">,</span>cm<span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Please enter height(/foot):___\b\b\b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%lf&quot;</span><span class="token punctuation">,</span><span class="token operator">&amp;</span>height_foot<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    cm<span class="token operator">=</span> height_foot <span class="token operator">*</span> <span class="token number">2.54</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Height is(/cm): %f&quot;</span><span class="token punctuation">,</span>cm<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Please enter height<span class="token punctuation">(</span>/foot<span class="token punctuation">)</span>:66_
+Height is<span class="token punctuation">(</span>/cm<span class="token punctuation">)</span>: <span class="token number">167.640000</span>
+</code></pre></div></details> <details class="custom-block details"><summary>8. 在美国的体积测量系统中，1品脱等于2杯，1杯等于8盎司，1盎司等于2大汤勺，1大汤勺等于3茶勺。编写一个程序，提示用户输入杯数，并以品脱、盎司、汤勺、茶勺为单位显示等价容量。思考对于该程序，为何使用浮点类型比整数类型更合适?</summary> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">float</span> pintuo<span class="token punctuation">,</span> bei<span class="token punctuation">,</span> angsi<span class="token punctuation">,</span> datangshao<span class="token punctuation">,</span> chachi<span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Please enter the number of cups:___\b\b\b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%f&quot;</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>bei<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    pintuo <span class="token operator">=</span> bei <span class="token operator">*</span> <span class="token number">1</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    angsi <span class="token operator">=</span> bei <span class="token operator">*</span> <span class="token number">8</span><span class="token punctuation">;</span>
+    datangshao <span class="token operator">=</span> bei <span class="token operator">*</span> <span class="token number">8</span> <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    chachi <span class="token operator">=</span> bei <span class="token operator">*</span> <span class="token number">8</span> <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;pintuo: %f\n&quot;</span>
+           <span class="token string">&quot;angsi: %f\n&quot;</span>
+           <span class="token string">&quot;datangshao: %f\n&quot;</span>
+           <span class="token string">&quot;chachi: %f\n&quot;</span><span class="token punctuation">,</span>
+           pintuo<span class="token punctuation">,</span> angsi<span class="token punctuation">,</span> datangshao<span class="token punctuation">,</span> chachi<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 答：如果品脱设置为整数类型，用户输入的杯数不是2的倍数的话，</span>
+<span class="token comment">//     会导致品脱输出结果小数位的数字被舍去，结果不够精确。</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Please enter the number of cups:30_
+pintuo: <span class="token number">15.000000</span>
+angsi: <span class="token number">240.000000</span>
+datangshao: <span class="token number">480.000000</span>
+chachi: <span class="token number">1440.000000</span>
+</code></pre></div></details> <h2 id="ch4-exercises"><a href="#ch4-exercises" class="header-anchor">#</a> Ch4 Exercises</h2> <details class="custom-block details"><summary>1. 提示输入名和姓，以 “名，姓” 的格式打印输出</summary> <div class="language-c extra-class"><pre class="language-c"><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">char</span> xing<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">,</span>ming<span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Please enter your first name and last name:__________\b\b\b\b\b\b\b\b\b\b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%s %s&quot;</span><span class="token punctuation">,</span>ming<span class="token punctuation">,</span>xing<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s,%s&quot;</span><span class="token punctuation">,</span>ming<span class="token punctuation">,</span>xing<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>Please enter your first name:xi pang___
+Please enter your last name:
+xi,pang
+</code></pre></div></details> <details class="custom-block details"><summary>2. 提示输入名字，执行以下操作</summary> <div class="language-c extra-class"><pre class="language-c"><code><span class="token comment">/*
+a. 打印名字，包括双引号；
+b. 在宽度为 20 的字段右端打印名字，包括双引号；
+c. 在宽度为 20 的字段左端打印名字，包括双引号；
+d. 在比姓名宽度宽 3 的字段中打印名字。
+*/</span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h&gt;</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;string.h&gt;</span></span>
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">30</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> nameLength<span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;Please enter your last name and first name:__________\b\b\b\b\b\b\b\b\b\b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">scanf</span><span class="token punctuation">(</span><span class="token string">&quot;%s&quot;</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    nameLength <span class="token operator">=</span> <span class="token function">strlen</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;\&quot;%s\&quot;\n&quot;</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>                  <span class="token comment">// a</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;\&quot;%20s\&quot;\n&quot;</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>                <span class="token comment">// b</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;\&quot;%-20s\&quot;\n&quot;</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span>               <span class="token comment">// c.</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">&quot;\&quot;%*s\&quot;\n&quot;</span><span class="token punctuation">,</span> nameLength <span class="token operator">+</span> <span class="token number">3</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// d</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code><span class="token string">&quot;pang&quot;</span>
+<span class="token string">&quot;                pang&quot;</span>
+<span class="token string">&quot;pang                &quot;</span>
+<span class="token string">&quot;   pang&quot;</span>
+</code></pre></div></details> <details class="custom-block details"><summary>3. 编写一个程序，读取一个浮点数，首先以小数点记数法打印，然后以指数记数法打印。用下面的格式进行输出（系统不同，指数记数法显示的位数可能不同）</summary> <div class="language-c extra-class"><pre class="language-c"><code>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>
+</code></pre></div></details> <details class="custom-block details"><summary>4.</summary> <div class="language-c extra-class"><pre class="language-c"><code>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>
+</code></pre></div></details> <details class="custom-block details"><summary>5.</summary> <div class="language-c extra-class"><pre class="language-c"><code>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>
+</code></pre></div></details> <details class="custom-block details"><summary>6.</summary> <div class="language-c extra-class"><pre class="language-c"><code>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>
+</code></pre></div></details> <details class="custom-block details"><summary>7.</summary> <div class="language-c extra-class"><pre class="language-c"><code>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>
+</code></pre></div></details> <details class="custom-block details"><summary>8.</summary> <div class="language-c extra-class"><pre class="language-c"><code>
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>
+</code></pre></div></details></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/study_2/ccpp/c.html" class="prev">
+        C Primer Plus
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.3a4d85d6.js" defer></script><script src="/assets/js/2.df84aaee.js" defer></script><script src="/assets/js/12.1f234f4e.js" defer></script>
+  </body>
+</html>
